@@ -1,8 +1,5 @@
 # 拦截到一个应用的所有流量
 
-This NetworkPolicy will drop all traffic to pods of an
-application, selected using Pod Selectors.
-
 这一策略使用 Pod 选择器来进行 Pod 选择，会拦截所有的目标为某应用的 Pod 的流量。
 
 
