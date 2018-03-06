@@ -9,35 +9,35 @@ _有了网络策略，你也做得到！_
 
 如果你对网络策略一窍不通，建议首先阅读我的文章：[Securing Kubernetes Cluster Networking](https://ahmet.im/blog/kubernetes-network-policy/)。
 
-### 开始之前
+## 开始之前
 
 - [创建集群](00-create-cluster.md)
 
-### 基础
+## 基础
 
 - [拦截到一个应用的所有流量](01-deny-all-traffic-to-an-application.md)
 - [限制到一个应用的流量](02-limit-traffic-to-an-application.md)
 - [允许所有目标为某个应用的流量](02a-allow-all-traffic-to-an-application.md)
 
-### 命名空间
+## 命名空间
 
-- [拦截当前命名空间中，所有白名单之外的流量](03-deny-all-non-whitelisted-traffic-in-the-namespace.md)
+- [拒绝命名空间内所有不符合白名单要求的流量](03-deny-all-non-whitelisted-traffic-in-the-namespace.md)
 - [拦截所有来自于其他命名空间的流量](04-deny-traffic-from-other-namespaces.md)
 - [允许来自所有命名空间的，目标为某应用的流量](05-allow-traffic-from-all-namespaces.md)
 - [允许所有来自于某命名空间的流量](06-allow-traffic-from-a-namespace.md)
 - [允许来自某命名空间某些 Pod 的流量](07-allow-traffic-from-some-pods-in-another-namespace.md)
 - [限制当前命名空间内到某应用的流量](08-limit-traffic-to-an-application-to-current-namespace.md)
 
-### 控制外部客户端流量
+## 控制外部客户端流量
 
 - [允许外部客户端的流量](08-allow-external-traffic.md)
 
-### 进阶
+## 进阶
 
 - [只允许目标为指定端口的流量](09-allow-traffic-only-to-a-port-number.md)
 - [用多个选择器选择允许通过的流量](10-allowing-traffic-with-multiple-selectors.md)
 
-### 控制外发流量（Egress） 🔥🆕🔥
+## 控制外发流量（Egress） 🔥🆕🔥
 
 - [拦截来自某应用的外发流量](11-deny-egress-traffic-from-an-application.md)
 - [拦截命名空间内所有白名单之外的 Egress 流量](12-deny-all-non-whitelisted-traffic-from-the-namespace.md)
@@ -47,7 +47,7 @@ _有了网络策略，你也做得到！_
 
 -----
 
-##### 作者
+## 作者
 
 Ahmet Alp Balkan ([@ahmetb](https://twitter.com/ahmetb)).
 
