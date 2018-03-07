@@ -1,15 +1,13 @@
 # 拒绝命名空间内所有不符合白名单要求的流量
 
-**用例**：这是一个基础策略，会屏蔽所有白名单之外的 Pod 间通信。
+## 用例
+这是一个基础策略，会屏蔽所有白名单之外的 Pod 间通信。
 
 可以考虑将这一策略应用到所有会部署工作负载的命名空间之中（除掉`kube-system`）。
 
-💡 **Best Practice:**  This policy will give you a default "deny all" functionality.
-This way, you can clearly identify which components have dependency on
-which components and deploy Network Policies which can be translated to dependency
-graphs between components.
 
-**最佳实践**：这个策略可以作为缺省策略，拒绝所有流量。这样就可以清楚的识别出组件之间的依赖，利用网络策略的定义就能清楚的勾画出组件间的依赖图。
+## 最佳实践
+这个策略可以作为缺省策略，拒绝所有流量。这样就可以清楚的识别出组件之间的依赖，利用网络策略的定义就能清楚的勾画出组件间的依赖图。
 
 ![Diagram of DENY all non-whitelisted traffic policy](img/3.gif)
 
@@ -36,7 +34,6 @@ spec:
 
   - 本例中可以省略`ingress`字段，或者简单的置为空值：`ingress:`
 
-
 ```sh
 $ kubectl apply -f default-deny-all.yaml
 networkpolicy "default-deny-all" created
@@ -44,6 +41,6 @@ networkpolicy "default-deny-all" created
 
 ## 清理
 
-~~~
+~~~sh
 kubectl delete networkpolicy default-deny-all
 ~~~

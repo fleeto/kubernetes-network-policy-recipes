@@ -11,7 +11,7 @@
 
 启动一个叫`web`的应用
 
-~~~
+~~~sh
 kubectl run web --image=nginx \
     --labels=app=web --expose --port 80
 ~~~
@@ -46,7 +46,7 @@ spec:
 
 将规则应用到集群上：
 
-```
+```sh
 $ kubectl apply web-allow-all.yaml
 networkpolicy "web-allow-all" created"
 ```
@@ -65,7 +65,7 @@ networkpolicy "web-allow-all" created"
 
 ### 清理
 
-```
+```sh
 kubectl delete deployment,service web
 kubectl delete networkpolicy web-allow-all web-deny-all
 ```
