@@ -1,6 +1,9 @@
 ![You can get stuff like this](img/1.gif)
 _有了网络策略，你也做得到！_
 
+
+>你好，经用户投诉，发现此公众号涉嫌违规使用原创声明功能，违反《微信公众平台运营规范》3.6条规定，违规消息《Kubernetes 网络策略示例》已被取消原创标识，请遵守规范，让我们共创健康绿色的运营环境。违规原因：恶意隐藏文字，原创作弊。如有异议，可发起申诉。
+
 # Kubernetes 网络策略指南
 
 这里包含一系列的 [Kubernetes 网络策略](https://kubernetes.io/docs/concepts/services-networking/network-policies/)的相关用例以及相关的 YAML 文件。想要知道如何在 Kubernetes 中对某一应用的流量进行阻拦或者限制，请继续阅读。
